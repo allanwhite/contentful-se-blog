@@ -1,0 +1,44 @@
+@layer base {
+  @font-face {
+    font-family: Clarika;
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url(/fonts/ClarikaProGrot-Rg.woff2) format("woff2");
+  }
+  @font-face {
+    font-family: Clarika;
+    font-weight: 700;
+    font-style: bold;
+    font-display: swap;
+    src: url(/fonts/ClarikaProGrot-Bd.woff2) format("woff2");
+  }
+  @font-face {
+    font-family: Sentinel;
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url(/fonts/Sentinel-Book.woff2) format("woff2");
+  }
+  @font-face {
+    font-family: Sentinel;
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+    src: url(/fonts/Sentinel-BookItalic.woff2) format("woff2");
+  }
+  @font-face {
+    font-family: Sentinel;
+    font-weight: 700;
+    font-style: bold;
+    font-display: swap;
+    src: url(/fonts/Sentinel-Bold.woff2) format("woff2");
+  }
+  @font-face {
+    font-family: Sentinel;
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+    src: url(/fonts/Sentinel-BoldItalic.woff2) format("woff2");
+  }
+}
