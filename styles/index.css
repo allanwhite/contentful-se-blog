@@ -1,5 +1,13 @@
+@import "fonts.css";
 /* purgecss start ignore */
 @tailwind base;
 @tailwind components;
 /* purgecss end ignore */
 @tailwind utilities;
+
+html {
+  @apply font-sans;
+}
+article {
+  @apply font-serif;
+}
