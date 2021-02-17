@@ -1,7 +1,7 @@
 /* rewritten with nesting */
 .markdown {
   @apply text-lg leading-relaxed;
-  p, ul, ol, blockquote {
+  p {
     margin-bottom: 1.2em;
   }
   /* fixing RT renderer problems */
@@ -9,12 +9,17 @@
     margin-left: 1em;
     list-style-type: disc;
     line-height: 1.3;
+    margin-bottom: 1.2em;
   }
   li p {
     margin-bottom: 0.5em;
   }
   blockquote {
-    @apply ml-8 text-xl italic;
+    @apply ml-8;
+  }
+  /* remove this if RT "extra p" list rendering is ever fixed. -AW */
+  blockquote p {
+    @apply text-xl italic opacity-90;
   }
 
   h2, h3, h4, h5 {
