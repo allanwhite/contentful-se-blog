@@ -1,6 +1,8 @@
 import Container from './container'
 import { EXAMPLE_PATH } from '../lib/constants'
 
+import {GithubOctocat} from '../public/icons/all-icons.js'
+
 export default function Footer() {
   return (
     <footer className="bg-accent-1 border-t border-accent-2">
@@ -18,8 +20,9 @@ export default function Footer() {
             </a>
             <a
               href={`https://github.com/vercel/next.js/tree/canary/examples/${EXAMPLE_PATH}`}
-              className="mx-3 font-bold hover:underline"
+              className="mx-3 inline-flex font-bold hover:underline"
             >
+              <GithubOctocat className='icon-inline mr-1' />
               View on GitHub
             </a>
           </div>

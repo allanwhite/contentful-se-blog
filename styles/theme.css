@@ -1,0 +1,11 @@
+html {
+  @apply font-sans;
+}
+article {
+  @apply font-serif;
+}
+/* needs .inline-flex on parent */
+.icon-inline {
+  display: inline-block;
+  width: 1.1em;
+}

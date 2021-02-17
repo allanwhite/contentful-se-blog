@@ -4,6 +4,15 @@
   p, ul, ol, blockquote {
     margin-bottom: 1.2em;
   }
+  /* fixing RT renderer problems */
+  ul, ol {
+    margin-left: 1em;
+    list-style-type: disc;
+    line-height: 1.3;
+  }
+  li p {
+    margin-bottom: 0.5em;
+  }
   blockquote {
     @apply ml-8 text-xl italic;
   }
@@ -22,4 +31,5 @@
   h2 + h3, h3 + h4 {
     margin-top: 0;
   }
+  p:empty { display:none; }
 }
