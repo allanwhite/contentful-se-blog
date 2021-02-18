@@ -4,8 +4,8 @@
   --bg-dark: rgb(29, 29, 31);
   --white-a: rgba(255,255,255, 0.5);
   --black-a: rgba(0,0,0, 0.5);
-  --link-color: hsl(341, 98%, 64%);
-  --link-hover: hsl(341, 90%, 48%);
+  --link-color: hsla(152, 89%, 46%, 1);
+  --link-hover: hsla(150, 100%, 39%, 1);
   --primary-dark: hsl(325, 100%, 29%);
   --alt-color: hsl(175, 100%, 47%);
   --alt-color-dark: hsl(182, 100%, 33%);
@@ -24,9 +24,35 @@ p {
   margin-bottom: 1.2em;
 }
 
+a {
+  transition: all var(--ui-speed) ease-out;
+  /* text-decoration: underline; */
+  text-decoration-skip-ink: auto;
+  text-decoration-style: solid;
+  text-decoration-thickness: .125em;
+  text-underline-offset: 1.5px;
+  text-decoration-color: inherit;
+  text-decoration-color: var(--link-color);
+}
+a.link {
+  text-decoration: underline;
+  text-decoration-color: hsla(152, 89%, 46%, 0);
+}
+a.link:hover, a.link:focus {
+  /* color: var(--link-hover); */
+  text-decoration-color: var(--link-hover);
+}
+
 /* needs .inline-flex on parent */
 .icon-inline {
   display: inline-block;
   width: 1.1em;
 }
 
+.article-title {
+  @apply font-serif font-bold tracking-tight leading-tight md:leading-none;
+  /* text-shadow: 1px 1px var(--link-color); */
+}
+.spaced-out {
+  @apply font-sans font-bold uppercase tracking-wider;
+}
