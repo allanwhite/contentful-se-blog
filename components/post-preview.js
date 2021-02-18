@@ -12,7 +12,7 @@ export default function PostPreview({
   slug,
 }) {
   return (
-    <div>
+    <aside className="mb-12 md:mb-6">
       <div className="mb-5">
         <CoverImage title={title} slug={slug} url={coverImage.url} />
       </div>
@@ -26,6 +26,6 @@ export default function PostPreview({
       </div>
       <p className="text-xl leading-relaxed mb-4">{excerpt}</p>
       {author && <Avatar name={author.name} picture={author.picture} />}
-    </div>
+    </aside>
   )
 }
