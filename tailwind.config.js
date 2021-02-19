@@ -3,10 +3,10 @@ module.exports = {
     content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
     // These options are passed through directly to PurgeCSS
     options: {
-      safelist: ['html', 'body', 'blog-body', 'blockquote'],
+      safelist: ['html', 'body'],
       // blocklist: [/^debug-/],
       keyframes: true,
-      fontFace: true,
+      fontFace: false,
     },
   },
   darkMode: false, // or 'media' or 'class'
