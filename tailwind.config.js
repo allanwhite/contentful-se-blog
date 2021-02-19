@@ -1,11 +1,20 @@
 module.exports = {
-  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+  purge: {
+    content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+    // These options are passed through directly to PurgeCSS
+    options: {
+      safelist: ['html', 'body'],
+      // blocklist: [/^debug-/],
+      keyframes: true,
+      fontFace: false,
+    },
+  },
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
       'sans': ['Clarika', 'ui-sans-serif', 'system-ui'],
       'serif': ['Sentinel', 'ui-serif', 'Georgia'],
-      'mono': ['ui-monospace', 'SFMono-Regular'],
+      'mono': ['IBM Plex Mono', 'ui-monospace', 'SFMono-Regular'],
       'display': ['Clarika'],
       'body': ['Sentinel'],
     },
