@@ -27,6 +27,7 @@ export default function CoverImage({ title, url, slug }) {
       src={`${url}?w=1200&h=600&fit=thumb&fm=jpg&q=40`}
       alt={`Cover Image for ${title}`}
       loading='lazy'
+      className='rounded-md overflow-hidden'
     />
     </picture>
   )

@@ -13,7 +13,7 @@ export default function PostPreview({
 }) {
   return (
     <aside className="mb-12 md:mb-6">
-      <div className="mb-5 rounded-md overflow-hidden">
+      <div className="mb-5">
         <CoverImage title={title} slug={slug} url={coverImage.url} />
       </div>
       <h3 className="text-2xl-scale mb-3 article-title">
