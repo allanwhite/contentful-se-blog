@@ -6,17 +6,17 @@
   }  
   blockquote {
     @apply pl-10 my-10 relative;
-    &::before {
-      content: "\201C";
-      font-size: 5rem;
-      font-weight: bold;
-      color: var(--link-color);
-      position: absolute;
-      left: -0.7rem;
-      top: 2rem;
-      line-height: 0;
-      opacity: 0.8;
-    }
+  }
+  blockquote::before {
+    content: "\201C";
+    font-size: 5rem;
+    font-weight: bold;
+    color: var(--link-color);
+    position: absolute;
+    left: -0.7rem;
+    top: 2rem;
+    line-height: 0;
+    opacity: 0.8;
   }
   /* remove this if RT "extra p" list rendering is ever fixed. -AW */
   blockquote p {
@@ -36,7 +36,6 @@
   }
 
   code {
-    /* @apply text-blue-800; */
     color: var(--link-hover);
   }
   h2, h3, h4, h5 {
