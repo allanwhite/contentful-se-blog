@@ -1,4 +1,6 @@
 @import "fonts.css";
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@0;1&display=swap');
+
 /* purgecss start ignore */
 @import "tailwindcss/base";
 @import "tailwindcss/components";
