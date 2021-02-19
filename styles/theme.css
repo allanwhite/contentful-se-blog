@@ -4,8 +4,9 @@
   --bg-dark: rgb(29, 29, 31);
   --white-a: rgba(255,255,255, 0.5);
   --black-a: rgba(0,0,0, 0.5);
-  --link-color: hsla(152, 89%, 46%, 1);
-  --link-hover: hsla(150, 100%, 39%, 1);
+  --link-color: hsla(288, 100%, 55%, 1);
+  /* --link-color: hsla(152, 89%, 46%, 1); */
+  --link-hover: hsla(283, 100%, 36%, 1);
   --primary-dark: hsl(325, 100%, 29%);
   --alt-color: hsl(175, 100%, 47%);
   --alt-color-dark: hsl(182, 100%, 33%);
@@ -16,12 +17,6 @@ html {
   @apply font-sans;
   background-color: white;
   /* background-color: var(--bg-light); */
-}
-article {
-  @apply font-serif;
-}
-p {
-  margin-bottom: 1.2em;
 }
 
 a {
@@ -40,7 +35,7 @@ a.link {
 }
 a.link:hover, a.link:focus {
   /* color: var(--link-hover); */
-  text-decoration-color: var(--link-hover);
+  text-decoration-color: var(--link-color);
 }
 
 /* needs .inline-flex on parent */

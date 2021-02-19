@@ -1,0 +1,73 @@
+/* rewritten with nesting */
+.blog-body {
+  @apply text-lg font-serif;
+  p {
+    margin-bottom: 0.8em;
+  }  
+  blockquote {
+    position: relative;
+    padding-left: 2.5rem;
+    margin-bottom: 2rem;
+    &::before {
+      content: "\201C";
+      font-size: 5rem;
+      font-weight: bold;
+      color: var(--link-color);
+      position: absolute;
+      left: -0.7rem;
+      top: 2rem;
+      line-height: 0;
+      opacity: 0.8;
+    }
+  }
+  /* remove this if RT "extra p" list rendering is ever fixed. -AW */
+  blockquote p {
+    @apply text-xl opacity-90;
+    font-style: italic;
+    margin-bottom: 0.5em;
+  }
+  
+  /* fixing RT renderer problems */
+  ul, ol {
+    @apply ml-8 mb-5;
+    list-style-type: disc;
+  }
+  li p {
+    margin-bottom: 0.3em;
+    @apply leading-5;
+  }
+
+  code {
+    /* @apply text-blue-800; */
+    color: var(--link-hover);
+  }
+  h2, h3, h4, h5 {
+    @apply font-sans leading-snug;
+    margin-top: 1.2em;
+    margin-bottom: 0.5em;
+  }
+  h2 {
+    @apply text-3xl font-bold text-gray-800;
+  }
+  h3 {
+    @apply text-2xl;
+  }
+  h4 {
+    @apply font-serif font-bold;
+  }
+  h2 + h3, h3 + h4 {
+    margin-top: 0;
+  }
+  p:empty { display:none; }
+
+  a {
+    text-decoration: underline;
+    text-decoration-thickness: .125em;
+    text-underline-offset: 1.5px;
+    text-decoration-color: var(--link-color);
+  }
+  a:hover, a:focus {
+    color: var(--link-hover);
+    text-decoration-color: var(--link-color);
+  }
+}

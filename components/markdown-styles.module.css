@@ -1,23 +1,11 @@
 /* rewritten with nesting */
-.markdown {
-  @apply text-lg;
-  /* fixing RT renderer problems */
+/* .markdown {
   ul, ol, blockquote {
     @apply ml-8 mb-5;
+  }
+
+  ul, ol {
     list-style-type: disc;
-  }
-  li p {
-    margin-bottom: 0.5em;
-    @apply leading-6;
-  }
-  /* blockquote {
-    @apply ml-8;
-  } */
-  /* remove this if RT "extra p" list rendering is ever fixed. -AW */
-  blockquote > p {
-    @apply text-xl opacity-90;
-    font-style: italic;
-    margin-bottom: 0.5em;
   }
 
   h2, h3, h4, h5 {
@@ -30,6 +18,9 @@
   }
   h3 {
     @apply text-2xl;
+  }
+  h4 {
+    @apply font-serif font-bold;
   }
   h2 + h3, h3 + h4 {
     margin-top: 0;
@@ -46,4 +37,4 @@
     color: var(--link-hover);
     text-decoration-color: var(--link-color);
   }
-}
+} */
